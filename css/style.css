@@ -1,0 +1,165 @@
+
+/* Main styles
+---------------------*/
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+margin: 0;
+padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.banner {
+  background-size: 100%;
+  z-index: -1;
+  position: relative;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/grey-smoke.jpg);
+}
+
+h1{
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+h2, p, li, a{
+  font-family: 'Dosis', sans-serif;
+  color: black;
+  line-height: 25px;
+}
+
+/* Main styles end
+---------------------*/
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  min-height: 9vh;
+  padding-top: 20px;
+}
+
+.nav-links{
+  display:flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+.nav-links li{
+  list-style: none;
+  color: white;
+  padding: 0 10px;
+}
+
+
+.nav-links a{
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+section {
+  margin: 50px 100px;
+}
+
+/* Columns
+---------------------*/
+.column-2 {
+ float: left;
+ align-items: center;
+ width: 50%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+padding: 0 10px;
+}
+
+.podcast {
+  padding: 30px 0;
+}
+
+.podcast p{
+  display: inline;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+#divider{
+  height: 1px;
+  width: 100%;
+  background: grey;
+}
+/* Columns end
+---------------------*/
+
+
+/* mobile settings */
+
+    @media only screen and (max-width: 650px){
+
+
+        .nav-links{
+          display: block;
+          text-align: center;
+        }
+
+        .nav-links li {
+          padding: 5px 0;
+          font-size: 20px;
+        }
+
+        .banner{
+          height: 200px;
+        }
+
+        section {
+          margin: 20px 30px;
+          overflow: wrap;
+        }
+
+        .column-2 {
+         width: 100%;
+        }
+
+        .podcast p {
+          display: inline-block;
+        }
+
+    }
+
+/* Contact
+---------------------*/
+
+  footer{
+    text-align: center;
+    font-style: normal;
+    margin: 100px 0 20px 0;
+  }
+
+  footer h2{
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  /* social media*/
+  .sm-logo {
+      width: 30px;
+      padding: 10px 10px 20px 10px;
+      box-shadow: none;
+  }
